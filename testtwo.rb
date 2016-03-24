@@ -1,4 +1,4 @@
-class test
+class Example
   def a
     puts "Eval of a"
   end
@@ -8,5 +8,7 @@ class test
   end
 end
 
-calll = test.new
-calll.a
+test = Example.new
+test.a
+
+# test.b # => This is method of private instance so only can't call this method
