@@ -1,7 +1,6 @@
-class This_and_that
-  def this_method
-    puts "What the fuck!!!"
-  end
-end
-abc = This_and_that.new()
-abc.this_method
+name = %{Jason}
+puts name
+name1 = %q{Jason}
+puts name1
+name2 = "Jason"
+puts "Hello #{name2}" # => Không thể dùng ngoặc kép '' khi trong câu lệnh puts có biến

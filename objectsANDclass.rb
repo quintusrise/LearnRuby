@@ -8,7 +8,7 @@ class BankAccount
     print "How much would you like to deposit : "
     amount = gets.chomp
     @balance += amount.to_f
-    puts "$#{amount} deposited."
+    puts "$#{amount} deposited." # #{amount} ở đây được coi là giá trị đã được nhập vào . Và tương xứng với biến @balance
   end
 
   def show_balance

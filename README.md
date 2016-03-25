@@ -1,1 +1,1 @@
-# LearnRuby
+# Learn Ruby The Hard Way
