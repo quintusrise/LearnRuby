@@ -14,3 +14,16 @@ We'll be able to type as much as we like.
 Even 4 lines if we want, or 5, or 6.
 """ 
 # => với 3 dấu ngoặc kép ta sẽ thay thế toán tử xuống dòng trong file như "/n" và nhìn code trông sẽ đẹp hơn !
+\\		Backslash ()
+\'		Single-quote (')
+\"		Double-quote (")
+\a		ASCII bell (BEL)
+\b		ASCII backspace (BS)
+\f		ASCII formfeed (FF)
+\n		ASCII linefeed (LF)
+\r		ASCII Carriage Return (CR)
+\t		ASCII Horizontal Tab (TAB)
+\uxxxx	Character with 16-bit hex value xxxx (Unicode only)
+\v		ASCII vertical tab (VT)
+\ooo	Character with octal value ooo
+\xhh	Character with hex value hh
