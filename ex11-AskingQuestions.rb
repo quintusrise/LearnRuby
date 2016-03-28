@@ -1,8 +1,8 @@
-printf "How old are you ? \n"
+printf "How old are you ?"
 age = gets.chomp
-printf "How tall are you ? \n"
+printf "How tall are you ?"
 height = gets.chomp
-printf "How much do you weight ? \n"
+printf "How much do you weight ?"
 weight = gets.chomp
 
 puts "You are #{age} years old , #{height} m, #{weight} kg"
