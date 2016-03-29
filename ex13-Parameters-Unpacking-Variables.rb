@@ -1,4 +1,4 @@
-first , seconds , thirds = ARGV
+first , seconds , thirds = ARGV # => first , second , thirds đại diện cho 3 biến khi được truyền bằng câu lệnh "ruby test var1 var2 var3"
 
 puts "Your first variables is : #{first}"
 

@@ -1,4 +1,5 @@
-user_name = ARGV.first # gets the first argument
+user_name = ARGV.first # gets the first argument => Truyền biến vào cùng lúc khi chạy file bằng lệnh command "ruby test.rb John"
+# => trong đó John là tham số đại diện cho phương thức "first" của ARGV
 prompt = '> '
 
 puts "Hi #{user_name}."
