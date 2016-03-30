@@ -4,7 +4,8 @@ puts "We're going to erase #{filename}"
 puts "If you don't want that, hit CTRL-C (^C)."
 puts "If you do want that, hit RETURN."
 
-$stdin.gets.chomp 									# => Bắt sự kiện tên file được truyền vào ngay từ ban đầu
+$stdin.gets.chomp 									# => Bắt sự kiện tên file được truyền vào ngay từ ban đầu . 
+# => Lưu ý chưa nhận biết được sự thay đổi giữa $stdin.gets và $stdin.gets.chomp 
 
 puts "Opening the file..."
 target = open(filename, 'w') 						# => Gọi là mode của thuộc tính open - thuộc tính 'w' là 'write' . 'r' là 'read' , 'a' là 'append'
@@ -31,4 +32,4 @@ target.write(line3)
 target.write("\n")
 
 puts "And finally, we close it."
-target.close
+target.close										# => 
