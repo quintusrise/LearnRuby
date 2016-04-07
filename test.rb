@@ -1,24 +1,34 @@
 filename = ARGV.first
-puts "Open file name ..."
-puts "If you do want that, hit CONTINUE."
-$stdin.gets.chomp
-editFile = open(filename , 'w')
-print editFile.read
-puts "Truncate this file"
-editFile.truncate(0)
-print "line One : "
-lineOne = $stdin.gets.chomp
-print "line Two : "
-lineTwo = $stdin.gets.chomp
-print "line Three : "
-lineThree = $stdin.gets.chomp
 
-editFile.write(lineOne)
-editFile.write("\n")
-editFile.write(lineTwo)
-editFile.write("\n")
-editFile.write(lineThree)
-editFile.write("\n")
+puts "We're going to erase #{filename}"
+puts "If you don't want that, hit CTRL-C (^C)."
+puts "If you do want that, hit RETURN."
 
-puts "End Line"
-editFile.close
+$stdin.gets
+
+puts "Opening the file..."
+target = open(filename, 'w')
+
+puts "Truncating the file.  Goodbye!"
+target.truncate(0)
+
+puts "Now I'm going to ask you for three lines."
+
+print "line 1: "
+line1 = $stdin.gets.chomp
+print "line 2: "
+line2 = $stdin.gets.chomp
+print "line 3: "
+line3 = $stdin.gets.chomp
+
+puts "I'm going to write these to the file."
+
+target.write(line1)
+target.write("\n")
+target.write(line2)
+target.write("\n")
+target.write(line3)
+target.write("\n")
+
+puts "And finally, we close it."
+target.close
