@@ -8,7 +8,7 @@ indata = in_file.read
 
 puts "The input file is #{indata.length} bytes long"
 
-puts "Does the output file exist? #{File.exist?(to_file)}" # => Kiểm tra xem file cần copy đến có tồn tại hay không nếu có sẽ trả về TRUE , không sẽ trả về FALSE
+puts "Does the output file exist? #{File.exist?(to_file)}" # Đây là toán tử điều kiện # => Kiểm tra xem file cần copy đến có tồn tại hay không nếu có sẽ trả về TRUE , không sẽ trả về FALSE
 puts "Ready, hit RETURN to continue, CTRL-C to abort."
 $stdin.gets
 
