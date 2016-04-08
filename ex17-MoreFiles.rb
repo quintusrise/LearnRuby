@@ -8,12 +8,12 @@ indata = in_file.read
 
 puts "The input file is #{indata.length} bytes long"
 
-puts "Does the output file exist? #{File.exist?(to_file)}"
+puts "Does the output file exist? #{File.exist?(to_file)}" # => Kiểm tra xem file cần copy đến có tồn tại hay không nếu có sẽ trả về TRUE , không sẽ trả về FALSE
 puts "Ready, hit RETURN to continue, CTRL-C to abort."
 $stdin.gets
 
-out_file = open(to_file, 'w')
-out_file.write(indata)
+out_file = open(to_file, 'w') 	# => Mở file đích và bật chế độ "w" là viết vào file đó
+out_file.write(indata)			# => Viết nội dung của file đã lấy được nội dung ở trên là form_file
 
 puts "Alright, all done."
 
