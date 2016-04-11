@@ -1,4 +1,4 @@
-def cheese_and_crackers(cheese_count, boxer_of_crackers) # => This is a function prototype
+def cheese_and_crackers(cheese_count, boxer_of_crackers)
 	puts "You have #{cheese_count} cheese !"
 	puts "You have #{boxer_of_crackers} boxer of crackers"
 	puts "Man that's enough for a party"
