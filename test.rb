@@ -1,34 +1,18 @@
-input_file = ARGV.first
+print "How ole are you ? "
 
-def print_all(f)
-  puts f.read
+age = $stdin.gets.to_i
+
+puts "Your age is : #{age}"
+
+def functionRuby
+	return "I love you because you have been #{age} year old !!!"
 end
 
-def rewind(f)
-  f.seek(8)					#
+if (age>=7) && (age<=10)
+	puts "Because you have been #{age} year old! So you are study"
+elsif (age > 10) && (age <= 13)
+	puts "Are you learning Middle School ? Because you have been #{age} year old !"
+	puts "Yeah , I'm is Mr.Right ! Hahaha"
+else
+	puts "I'm not need ask you . Bye bye"
 end
-
-def print_a_line(line_count, f)
-  puts "#{line_count}, #{f.gets.chomp}"
-end
-
-current_file = open(input_file)
-
-puts "First let's print the whole file:\n"
-
-print_all(current_file)
-
-puts "Now let's rewind, kind of like a tape."
-
-rewind(current_file)
-
-puts "Let's print three lines:"
-
-current_line = 1
-print_a_line(current_line, current_file)
-
-current_line = current_line + 1
-print_a_line(current_line, current_file)
-
-current_line = current_line + 1
-print_a_line(current_line, current_file)
